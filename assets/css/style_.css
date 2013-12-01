@@ -1,0 +1,206 @@
+/*
+Style.css: Hoja de estilos del site
+
+TODO: Probar otras resoluciones
+Probar en IE6
+*/
+/* ELEMENTOS COMUNES */
+body {
+	margin-right: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+html, body{
+    /* any div up to fullscreen-cont must have this
+    in this case html and body */
+    height:100%;
+    min-height:100%;
+    margin:0;
+    overflow: hidden;
+}
+
+
+
+body.index {
+	background:url('../images/home.png') center no-repeat;
+	display:block;
+	position:relative;
+	min-width:100%;
+	min-height:100%;
+	margin-bottom:2px;
+	background-size: cover;
+}
+
+body.servicios {
+	background:url('../images/servicios.jpg')center no-repeat;
+	display:block;position:relative;
+	min-width:100%;
+	min-height:100%;
+	margin-bottom:2px;
+	background-size: cover;
+}
+
+body.obras {
+	background:url('../images/obras.jpg')center no-repeat;
+	display:block;position:relative;
+	min-width:100%;
+	min-height:100%;
+	margin-bottom:2px;
+	background-size: cover;
+}
+
+body.nosotros,
+body.contacto {
+	background:url('../images/nosotros.jpg');
+	display:block;position:relative;
+	min-width:100%;
+	min-height:100%;
+	margin-bottom:2px;
+	background-size: cover;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+#container {
+	display:block;
+	position:absolute;
+	z-index:-1;
+	min-width:100%;
+	min-height:100%;
+}
+
+/* TÍTULOS
+Temporal: En Construcción
+TODO: Modificar "En Construcción" por "Contenido" */
+.titulo, /* Titulo: lo que Dice "Juan Poggi - Arquitecto */
+.en-construccion {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #fff;
+}
+
+.titulo {
+	position: absolute;
+	right: 18.750em;
+	top: 1.5em;
+	
+}
+
+.en-construccion {
+	position: absolute;
+	top: 20em;
+	left: 20em;
+}
+
+.titulo1 /* Juan Poggi */ {
+	font-size: 40pt;
+}
+
+.titulo2 /* Arquitecto */ {
+	font-size: 24pt;
+}
+
+.titulo ul li {
+	display: inline-block;
+	padding: 2px 7px; /*Separar el texto*/
+	margin:8px; /* Separar los botones */
+}
+
+/* NAVIGATION BAR AKA BOTONERA 
+TODO: Transiciones */
+#botonera {
+	background: #301617;
+	color: #fff;
+	font-size: 11pt;
+	
+	text-align:center;
+	vertical-align:middle;
+}
+
+#botonera a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#botonera ul li {
+	background-color:#241516;
+	display: inline-block;
+	padding: 2px 7px; /*Separar el texto*/
+	margin:8px; /* Separar los botones */
+}
+
+#botonera a:visited {
+	color: #fff;
+}
+
+
+#botonera li.index {
+	top: 10em;
+	left: 3.750em;
+	position: absolute;
+	height: 7.500em;
+	width: 7.500em;
+}
+
+#botonera li.servicios {
+	top: 10em;
+	left: 12.750em;
+	position: absolute;
+	height: 7.500em;
+	width: 7.500em;
+}
+
+#botonera li.nosotros {
+	top: 10em;
+	left: 21.750em;
+	position: absolute;
+	height: 7.500em;
+	width: 7.500em;
+}
+
+#botonera li.contacto {
+	top: 10em;
+	left: 30.750em;
+	position: absolute;
+	height: 7.500em;
+	width: 7.500em;
+}
+
+#botonera li.obras {
+	top: 10em;
+	left: 39.750em;
+	position: absolute;
+	height: 7.500em;
+	width: 7.500em;
+}
+
+/* MENU DE NAVEGACIÓN */
+#menu:hover {
+	background-color:#fff; /* Color de fondo sobre el boton */
+	opacity: 1.0;
+}
+
+#menu {
+	position:absolute;
+	bottom:3.75em;
+	right:1.875em;	
+	height: 15em;
+	width: 15em;
+	text-align: right;
+	color: #301617;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#menu a:visited {
+	color: #301617;
+	display: block;
+}
+
+#menu a {
+	color: #301617;
+	display: block;
+	text-decoration: none;
+}
