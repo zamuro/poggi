@@ -17,6 +17,7 @@ html, body{
     min-height:100%;
     margin:0;
     overflow: hidden;
+    z-index: -1;
 }
 
 body.index {
@@ -30,16 +31,16 @@ body.index {
 }
 
 body.servicios {
-	background:url('../images/servicios.jpg')center no-repeat;
+	background:url('../images/servicios.png')center no-repeat;
 	display:block;position:relative;
 	min-width:100%;
-	min-height:100%;
+	min-height:75%;
 	margin-bottom:2px;
 	background-size: cover;
 }
 
 body.obras {
-	background:url('../images/obras.jpg')center no-repeat;
+	background:url('../images/obras.png')center no-repeat;
 	display:block;position:relative;
 	min-width:100%;
 	min-height:100%;
@@ -49,7 +50,7 @@ body.obras {
 
 body.nosotros,
 body.contacto {
-	background:url('../images/nosotros.jpg');
+	background:url('../images/nosotros.png');
 	display:block;position:relative;
 	min-width:100%;
 	min-height:100%;
@@ -61,7 +62,7 @@ body.contacto {
 /* CONTENEDOR PRINCIPAL */
 #container {
 	display:block;
-	position:absolute;
+	position:relative;
 	z-index:-1;
 	min-width:100%;
 	min-height:100%;
@@ -105,7 +106,6 @@ TODO: Modificar "En Construcción" por "Contenido" */
 /* NAVIGATION BAR AKA BOTONERA 
 TODO: Transiciones */
 #botonera {
-	background: #301617;
 	color: #fff;
 	font-size: 11pt;
 	text-align:center;
@@ -162,8 +162,10 @@ TODO: Transiciones */
 
 /* MENU DE NAVEGACIÓN */
 .menu {
-	position:absolute;
-	bottom:3.75em;
+	position:relative;
+	float: right;
+	top:20.75em;
+	z-index: 5;
 	right:1.875em;	
 	height: 15em;
 	width: 15em;
@@ -187,9 +189,8 @@ TODO: Transiciones */
 /* FOOTER */
 #footer {
 	position: absolute;
-	bottom: 5px;
-	padding-left: 50%;
-	font-size: 8pt;
+	padding-left: 120px;
+	bottom: 0px;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 8pt;
