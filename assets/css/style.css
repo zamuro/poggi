@@ -18,6 +18,7 @@ html, body{
     margin:0;
     overflow: hidden;
     z-index: -1;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 body.index {
@@ -71,15 +72,21 @@ body.contacto {
 /* TÍTULOS
 Temporal: En Construcción
 TODO: Modificar "En Construcción" por "Contenido" */
+.titulo-home,
 .titulo, /* Titulo: lo que Dice "Juan Poggi - Arquitecto */
 .en-construccion {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: #fff;
+}
+
+.titulo-home {
+	position: absolute;
+	right: 18.750em;
+	top: 1.5em;	
 }
 
 .titulo {
 	position: absolute;
-	right: 18.750em;
+	left: 6.750em;
 	top: 1.5em;	
 }
 
@@ -90,17 +97,32 @@ TODO: Modificar "En Construcción" por "Contenido" */
 }
 
 .titulo1 {
-	font-size: 40pt;
+	font-size: 28pt;
 }
 
 .titulo2 {
+	font-size: 16pt;
+}
+
+.titulo1-home {
+	font-size: 40pt;
+}
+
+.titulo2-home {
 	font-size: 24pt;
 }
 
-.titulo ul li {
+.titulo ul li,
+.titulo-home ul li {
 	display: inline-block;
-	padding: 2px 7px; /*Separar el texto*/
+	padding: 2px 5px; /*Separar el texto*/
 	margin:8px; /* Separar los botones */
+}
+
+.titulo ul a,
+.titulo ul a:visited {
+	color: #fff;
+	text-decoration: none;
 }
 
 /* NAVIGATION BAR AKA BOTONERA 
@@ -117,47 +139,49 @@ TODO: Transiciones */
 	display: inline-block;
 	padding: 2px 7px; /*Separar el texto*/
 	margin:8px; /* Separar los botones */
+	opacity: .4;
+	transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	-webkit-transition: opacity .75s ease-in-out;
 }
 
-
-#botonera li.index {
-	top: 10em;
-	left: 3.750em;
-	position: absolute;
-	height: 7.500em;
-	width: 7.500em;
+#botonera ul a {
+	color: #fff;
+	text-decoration: none;
 }
 
 #botonera li.servicios {
-	top: 10em;
-	left: 12.750em;
+	top: 1.50em;
+	left: 58.5em;
 	position: absolute;
-	height: 7.500em;
-	width: 7.500em;
-}
-
-#botonera li.nosotros {
-	top: 10em;
-	left: 21.750em;
-	position: absolute;
-	height: 7.500em;
-	width: 7.500em;
 }
 
 #botonera li.contacto {
-	top: 10em;
-	left: 30.750em;
+	top: 1.50em;
+	left: 71.750em;
 	position: absolute;
-	height: 7.500em;
-	width: 7.500em;
 }
 
-#botonera li.obras {
-	top: 10em;
-	left: 39.750em;
+#botonera li.obras,
+#botonera li.nosotros {
+	top: 1.50em;
+	left: 45.250em;
 	position: absolute;
-	height: 7.500em;
-	width: 7.500em;
+}
+
+#botonera li.obras,
+#botonera li.contacto,
+#botonera li.servicios,
+#botonera li.nosotros {
+	height: 12em;
+	width: 12em;
+}
+
+#botonera li.obras:hover,
+#botonera li.contacto:hover,
+#botonera li.servicios:hover,
+#botonera li.nosotros:hover {
+	opacity: 1;
 }
 
 /* MENU DE NAVEGACIÓN */
@@ -171,8 +195,15 @@ TODO: Transiciones */
 	width: 15em;
 	text-align: right;
 	color: #301617;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	background-color: #fff;
+	opacity: .4;
+	transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	-webkit-transition: opacity .75s ease-in-out;
+}
+
+.menu:hover {
+	opacity: 1;
 }
 
 .menu a:visited {
@@ -186,24 +217,6 @@ TODO: Transiciones */
 	text-decoration: none;
 }
 
-/* FOOTER */
-#footer {
-	position: absolute;
-	padding-left: 120px;
-	bottom: 0px;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 8pt;
-}
-
-#footer a,
-#footer a:visited {
-	color: #fff;
-	text-decoration: none;
-}
-
-#footer ul li {
-	display: inline-block;
-	padding: 2px 7px; /*Separar el texto*/
-	margin:8px; /* Separar los botones */
+.menu li a:hover {
+	font-weight: bold;
 }
