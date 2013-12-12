@@ -26,7 +26,7 @@ body.index {
 	position:relative;
 	min-width:100%;
 	min-height:100%;
-	margin-bottom:2px;
+
 	background-size: cover;
 }
 
@@ -34,7 +34,7 @@ body.servicios {
 	background:url('../images/servicios.png')center no-repeat;
 	display:block;position:relative;
 	min-width:100%;
-	min-height:75%;
+	min-height:100%;
 	margin-bottom:2px;
 	background-size: cover;
 }
@@ -68,17 +68,14 @@ body.contacto {
 	min-height:100%;
 }
 
-/* TÍTULOS
-Temporal: En Construcción
-TODO: Modificar "En Construcción" por "Contenido" */
+/* TÍTULOS */
 .titulo-home,
 .titulo { /* Titulo: lo que Dice "Juan Poggi - Arquitecto */
-color: #fff;
--webkit-animation: fadein 3s; 
--moz-animation: fadein 3s; 
--ms-animation: fadein 3s;
--o-animation: fadein 3s; 
-animation: fadein 3s;
+	-webkit-animation: fadein 3s; 
+	-moz-animation: fadein 3s; 
+	-ms-animation: fadein 3s;
+	-o-animation: fadein 3s; 
+	animation: fadein 3s;
 }
 
 @keyframes fadein {
@@ -110,23 +107,18 @@ animation: fadein 3s;
 	to   { opacity: 1; }
 	}​
 
-.titulo-home {
-	position: absolute;
-	right: 18.750em;
-	top: 1.5em;
-}
-
 .titulo {
+	color: rgba(69, 33, 33, 1);
 	position: absolute;
 	left: 6.750em;
 	top: 1.5em;	
 }
 
-.en-construccion {
-	position: absolute;
-	top: 20em;
-	left: 20em;
-	color: #fff;
+.titulo-home {
+	color: rgba(69, 33, 33, 1);
+	position:absolute;
+	top: 40%;
+	left: 15%;
 }
 
 .titulo1 {
@@ -138,11 +130,11 @@ animation: fadein 3s;
 }
 
 .titulo1-home {
-	font-size: 40pt;
+	font-size: 36pt;
 }
 
 .titulo2-home {
-	font-size: 24pt;
+	font-size: 20pt;
 }
 
 .titulo ul li,
@@ -154,9 +146,27 @@ animation: fadein 3s;
 
 .titulo ul a,
 .titulo ul a:visited {
-	color: #fff;
+	color: rgba(69, 33, 33, 1);
 	text-decoration: none;
 }
+
+/* CONTENIDO DINÁMICO DEL SITE */
+
+.en-construccion {
+	position:absolute;
+	top: 50%;
+	left: 19%;
+	color: #fff;
+}
+
+.contenido-obras {
+	position:absolute;
+	top: 31%;
+	left: 18%;
+	color: #fff;
+	height: 25em; 
+}
+
 
 /* NAVIGATION BAR AKA BOTONERA */
 
@@ -168,7 +178,7 @@ animation: fadein 3s;
 }
 
 #botonera ul li {
-	background-color:#241516;
+	background-color:rgba(69, 33, 33, 1);
 	display: inline-block;
 	padding: 2px 7px; /*Separar el texto*/
 	margin:8px; /* Separar los botones */
@@ -183,20 +193,24 @@ animation: fadein 3s;
 	text-decoration: none;
 }
 
-#botonera li.servicios {
+#botonera li.servicios,
+#botonera li.servicios-otras {
 	top: 1.50em;
 	left: 58.5em;
 	position: absolute;
 }
 
-#botonera li.contacto {
+#botonera li.contacto,
+#botonera li.contacto-otras
+ {
 	top: 1.50em;
 	left: 71.750em;
 	position: absolute;
 }
 
 #botonera li.obras,
-#botonera li.nosotros {
+#botonera li.nosotros,
+#botonera li.obras-otras {
 	top: 1.50em;
 	left: 45.250em;
 	position: absolute;
@@ -205,31 +219,46 @@ animation: fadein 3s;
 #botonera li.obras,
 #botonera li.contacto,
 #botonera li.servicios,
-#botonera li.nosotros {
+#botonera li.nosotros,
+#botonera li.obras-otras,
+#botonera li.contacto-otras,
+#botonera li.servicios-otras {
 	height: 12em;
 	width: 12em;
+}
+
+#botonera li.obras-otras,
+#botonera li.contacto-otras,
+#botonera li.servicios-otras {
+	background-color: rgba(255, 255, 255, 1);
+	color: rgba(69, 33, 33, 1);
+	opacity: 0.4;
 }
 
 #botonera li.obras:hover,
 #botonera li.contacto:hover,
 #botonera li.servicios:hover,
-#botonera li.nosotros:hover {
+#botonera li.nosotros:hover,
+#botonera li.obras-otras:hover,
+#botonera li.contacto-otras:hover,
+#botonera li.servicios-otras:hover {
 	opacity: 1;
 }
 
 /* MENU DE NAVEGACIÓN */
 .menu {
-	position:relative;
+	position:absolute;
 	float: right;
-	top: 15em;
-	z-index: 5;
-	right:1.875em;	
-	height: 15em;
-	width: 15em;
+	bottom: 5%;
+	z-index: 50;
+	right:5.9%;	
+	height: 11.8em;
+	width: 11.8em;
 	text-align: right;
-	color: #301617;
+	color: rgba(69, 33, 33, 1);
 	background-color: #fff;
 	opacity: .4;
+	line-height: 1.4;
 	transition: opacity .75s ease-in-out;
 	-moz-transition: opacity .75s ease-in-out;
 	-webkit-transition: opacity .75s ease-in-out;
@@ -240,16 +269,15 @@ animation: fadein 3s;
 }
 
 .menu a:visited {
-	color: #301617;
+	color: rgba(69, 33, 33, 1);
 	display: block;
 }
 
 .menu a {
-	color: #301617;
+	color: rgba(69, 33, 33, 1);
 	display: block;
 	text-decoration: none;
 }
 
 .menu li a:hover {
 	font-weight: bold;
-}

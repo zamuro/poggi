@@ -10,7 +10,8 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="servicios">
+</head>
+<body class='obras'>
   <div id='container'>
     <div class='titulo'>
       <ul><a href="index.html">
@@ -18,19 +19,19 @@
         <li><div class='titulo2'>ARQUITECTO</div></li>
       </a></ul>
     </div>
-    <div class='en-construccion'>
-      <h1>EN CONSTRUCCIÓN</h1>
+    <div class='contenido-obras'>
+      <?php include('extras/paginacion-obras.php'); ?>
+        </div>
+        <div id='botonera'>
+          <ul>
+            <li class="obras">OBRAS Y PROYECTOS</li>
+             <a  href='servicios.html'><li class="servicios-otras">SERVICIOS</li></a>
+            <a  href='contacto.html'><li class="contacto-otras">CONTACTO</li></a>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div id='botonera'>
-      <ul>
-        <a  href='obras.php'><li class="obras-otras">OBRAS Y PROYECTOS</li></a>
-        <li class="servicios">SERVICIOS</li>
-        <a  href='contacto.html'><li class="contacto-otras">CONTACTO</li></a>
-      </ul>
-    </div>
-  </div>
-</div>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-</body>
-</html>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    </body>
+    </html>
