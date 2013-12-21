@@ -1,0 +1,2 @@
+Options +FollowSymLinks -Indexes -MultiViews
+php_value include_path ".:/usr/share/php:/var/www/poggi/lib"

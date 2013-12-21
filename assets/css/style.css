@@ -15,7 +15,7 @@ html, body{
 	height:100%;
 	min-height:100%;
 	margin:0;
-	overflow: hidden;
+/*	overflow: hidden;*/
 	z-index: -10;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -48,9 +48,17 @@ body.obras {
 	background-size: cover;
 }
 
-body.nosotros,
+body.nosotros{
+background:url('../images/nosotros.png');
+display:block;position:relative;
+min-width:100%;
+min-height:100%;
+margin-bottom:2px;
+background-size: cover;
+}
+
 body.contacto {
-	background:url('../images/nosotros.png');
+	background:url('../images/contacto.png');
 	display:block;position:relative;
 	min-width:100%;
 	min-height:100%;
@@ -122,7 +130,7 @@ body.contacto {
 }
 
 .titulo1 {
-	font-size: 28pt;
+	font-size: 24pt;
 }
 
 .titulo2 {
@@ -130,7 +138,7 @@ body.contacto {
 }
 
 .titulo1-home {
-	font-size: 36pt;
+	font-size: 30pt;
 }
 
 .titulo2-home {
@@ -141,7 +149,7 @@ body.contacto {
 .titulo-home ul li {
 	display: inline-block;
 	padding: 2px 5px; /*Separar el texto*/
-	margin:8px; /* Separar los botones */
+	margin:2px; /* Separar los botones */
 }
 
 .titulo ul a,
@@ -165,6 +173,26 @@ body.contacto {
 	left: 18%;
 	color: #fff;
 	height: 25em; 
+
+		-webkit-animation: fadein 5s; 
+		-moz-animation: fadein 5s; 
+		-ms-animation: fadein 5s;
+		-o-animation: fadein 5s; 
+		animation: fadein 5s;
+	
+}
+.detalle-obras {
+	position: absolute;
+	z-index: 20;
+	max-width: 100%;
+	top: 30%;
+	color: #fff;
+		-webkit-animation: fadein 5s; 
+		-moz-animation: fadein 5s; 
+		-ms-animation: fadein 5s;
+		-o-animation: fadein 5s; 
+		animation: fadein 5s;
+	
 }
 
 
@@ -172,7 +200,7 @@ body.contacto {
 
 #botonera {
 	color: #fff;
-	font-size: 11pt;
+	font-size: 10pt;
 	text-align:center;
 	vertical-align:middle;
 }
@@ -252,8 +280,8 @@ body.contacto {
 	bottom: 5%;
 	z-index: 50;
 	right:5.9%;	
-	height: 11.8em;
-	width: 11.8em;
+	height: 12em;
+	width: 12em;
 	text-align: right;
 	color: rgba(69, 33, 33, 1);
 	background-color: #fff;
@@ -281,3 +309,90 @@ body.contacto {
 
 .menu li a:hover {
 	font-weight: bold;
+
+}
+
+/* ÁREA DE CONTACTOS */
+
+.contacto {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 12em;
+	display: block;
+	background-color: rgba(69, 33, 33, 1);
+}
+
+.contacto ul {
+	list-style: none;
+	color: #fff;
+	font-size: 10pt;
+	text-transform: uppercase;
+}
+
+.contacto ul li.datos {
+	position: relative;
+	margin: 2em;
+padding-left: 15%;
+line-height: 0.25em;
+}
+
+.contacto ul.qr li {
+position: absolute;
+	margin: 2em;
+top: 0px;
+right: 5%;
+line-height: 0.25em;	
+}
+
+/* SERVICIOS */
+
+.obra-servicio {
+   position: absolute;
+    max-height: auto;
+    width: 50em;
+    max-width: 100%;
+    display: block;
+    list-style: none;
+}
+
+.servicios-secundario {
+	position: absolute;
+	top: 15em;
+	left: 59.25em;
+	width: 13em;
+	height: 100%;
+	text-transform: uppercase;
+	background-color: rgba(69, 33, 33, 1);
+	-webkit-animation: fadein 5s; 
+	-moz-animation: fadein 5s; 
+	-ms-animation: fadein 5s;
+	-o-animation: fadein 5s; 
+	animation: fadein 5s;
+}
+
+.servicio-detalle {
+   position: absolute;
+    max-height: auto;
+    width: 50em;
+    max-width: 100%;
+    display: block;
+    list-style: none;
+}
+
+.caja-servicio  {
+    background-color:rgba(69, 33, 33, 1);
+    text-transform: uppercase;
+    height: 24em;
+    width: 12em;
+    
+}
+
+.caja-foto-servicio  {
+    display: inline-block;
+    position: relative;
+    
+    left: 12.5em;
+    height: 24em;
+    width: 24em;
+}

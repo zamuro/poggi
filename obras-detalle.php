@@ -19,12 +19,12 @@
         <li><div class='titulo2'>ARQUITECTO</div></li>
       </a></ul>
     </div>
-    <div class='contenido-obras'>
-      <?php include('prueba.php'); ?>
+    <div class='detalle-obras'>
+      <?php include('extras/obra-detalle.php'); ?>
         </div>
         <div id='botonera'>
           <ul>
-            <li class="obras">OBRAS Y PROYECTOS</li>
+            <li class="obras">PROYECTOS Y OBRAS</li>
              <a  href='servicios.html'><li class="servicios-otras">SERVICIOS</li></a>
             <a  href='contacto.html'><li class="contacto-otras">CONTACTO</li></a>
           </ul>

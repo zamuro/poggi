@@ -3,15 +3,15 @@
 </head>
 <?php
 $countries = array(
-	'1',
-	'2',
-	'3',
-	'4',
-	'5',
-	'6',
-	'7',
-	'8',
-	'9',
+	'01',
+	'02',
+	'03',
+	'04',
+	'05',
+	'06',
+	'07',
+	'08',
+	'09',
 	'10',
 	'11',
 	'12',
@@ -53,21 +53,28 @@ $countries = array(
 
 ?>
 <ul>
+<form method="get" action="extras/obra-detalle.php">
+<input type="hidden" name="id">
 <?php      
             foreach ($countries as $index => $country):
 $i = $country % $records_per_page;
+?>
+
+<?php
+
       if ($i == 1 || $i == 2) { ?>
- 
+
     
-    <li class="arriba"><?php echo $country ?></li>
+    <li class="arriba"><a href="obras-detalle.php?id=<?php echo $country; ?>"><img src="assets/images/thumbnails/<?php echo $country; ?>.jpg" width="176" height="176"></a></li>
  
     <?php } 
     else { ?>
     
 
  
+     <li class="abajo"><a href="obras-detalle.php?id=<?php echo $country; ?>"><img src="assets/images/thumbnails/<?php echo $country; ?>.jpg" width="176" height="176"></a></li>
+ 
     
-    <li class="abajo"><?php echo $country ?></li>
 
  
             <?php
@@ -76,6 +83,7 @@ $i = $country % $records_per_page;
 
             endforeach;
 ?>
+</form>
 </ul>
 <?php
 
